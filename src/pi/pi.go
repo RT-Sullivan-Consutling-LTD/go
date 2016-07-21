@@ -48,7 +48,7 @@ func arccot(x int64, unity *big.Int) *big.Int {
 }
 
 func main() {
-	digits := big.NewInt(10000 + 10)
+	digits := big.NewInt(1000 + 10)
 	unity := big.NewInt(0)
 	unity.Exp(big.NewInt(10), digits, nil)
 	pi := big.NewInt(0)
