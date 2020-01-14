@@ -54,6 +54,5 @@ func main() {
 	pi := big.NewInt(0)
 	four := big.NewInt(4)
 	pi.Mul(four, pi.Sub(pi.Mul(four, arccot(5, unity)), arccot(239, unity)))
-	//val := big.Mul(4, big.Sub(big.Mul(4, arccot(5, unity)), arccot(239, unity)))
 	fmt.Println("Hello, Pi:  ", pi)
 }
