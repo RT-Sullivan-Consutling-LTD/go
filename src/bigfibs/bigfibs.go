@@ -6,7 +6,7 @@ import (
 	"math/big"
 )
 
-const Num_of_digits = 1000
+const mDigits = 1000
 
 func main() {
 
@@ -19,7 +19,7 @@ func main() {
 
 	// Initialize limit as 10^999, the smallest integer with 100 digits.
 	var limit big.Int
-	limit.Exp(big.NewInt(10), big.NewInt(Num_of_digits-1), nil)
+	limit.Exp(big.NewInt(10), big.NewInt(mDigits-1), nil)
 
 	// Loop while a is smaller than 1e100.
 	for a.Cmp(&limit) < 0 {
