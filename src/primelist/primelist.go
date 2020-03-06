@@ -20,8 +20,9 @@ func main() {
 	}
 
 	N, err := strconv.Atoi(os.Args[1])
+	//N, err := strconv.ParseFloat(os.Args[1], 64)
 
-	nsqrt := math.Sqrt(N)
+	nsqrt := math.Sqrt(float64(N))
 
 	is_prime := [N]bool{}
 
